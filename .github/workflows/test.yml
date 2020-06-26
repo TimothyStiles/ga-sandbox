@@ -15,7 +15,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Test
-      run: go test ./...
+      run: go test -v ./...
 
   test-gopath:
     env:
@@ -32,4 +32,4 @@ jobs:
       with:
         path: ./src/github.com/${{ github.repository }}
     - name: Test
-      run: go test ./...
+      run: go test -v ./...
