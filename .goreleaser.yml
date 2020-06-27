@@ -67,8 +67,3 @@ release:
   # You can change the name of the GitHub release.
   # Default is `{{.Tag}}`
   name_template: "{{.ProjectName}}-v{{.Version}} {{.Env.USER}}"
-
-  # You can disable this pipe in order to not upload any artifacts to
-  # GitHub.
-  # Defaults to false.
-  disable: false
